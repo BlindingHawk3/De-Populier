@@ -22,6 +22,7 @@
 		2C51FCE922DCA750003EAD0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C51FCEC22DCA750003EAD0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2C51FCEE22DCA750003EAD0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C51FCF422DCA7D4003EAD0D /* De Populier App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "De Populier App.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +55,7 @@
 		2C51FCE122DCA74F003EAD0D /* De Populier App */ = {
 			isa = PBXGroup;
 			children = (
+				2C51FCF422DCA7D4003EAD0D /* De Populier App.entitlements */,
 				2C51FCE222DCA74F003EAD0D /* AppDelegate.swift */,
 				2C51FCE422DCA74F003EAD0D /* ViewController.swift */,
 				2C51FCE622DCA74F003EAD0D /* Main.storyboard */,
@@ -96,6 +98,11 @@
 				TargetAttributes = {
 					2C51FCDE22DCA74F003EAD0D = {
 						CreatedOnToolsVersion = 10.2.1;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -282,6 +289,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "De Populier App/De Populier App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7AL4872823;
 				INFOPLIST_FILE = "De Populier App/Info.plist";
@@ -300,6 +308,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "De Populier App/De Populier App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7AL4872823;
 				INFOPLIST_FILE = "De Populier App/Info.plist";
